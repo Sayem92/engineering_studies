@@ -6,12 +6,12 @@ const Blog = () => {
       <div className="container px-6 py-10 mx-auto">
         <div className="text-center">
           <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">
-            From the blog
+            From <span className="text-purple-600">the blog</span>
           </h1>
 
           <p className="max-w-lg mx-auto mt-4 text-gray-500">
             Salami mustard spice tea fridge authentic Chinese food dish salt
-            tasty liquor. Sweet savory foodtruck pie.
+            tasty liquor. Sweet savory food truck pie.
           </p>
         </div>
 

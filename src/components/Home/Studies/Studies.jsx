@@ -20,9 +20,9 @@ const Studies = () => {
     },
   ];
   return (
-    <div className="my-16 mx-10 ">
+    <div className="py-16 px-10 bg-gradient-to-r from-slate-300 to-slate-100">
       <div className="text-center">
-        <h1 className="font-bold text-3xl">AVAILABLE COURSES</h1>
+        <h1 className="font-bold text-3xl">AVAILABLE <span className="text-purple-600">COURSES</span></h1>
         <p className="py-3">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia placeat
           soluta obcaecati recusandae a odio provident perspiciatis magnam

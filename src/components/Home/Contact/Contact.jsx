@@ -3,7 +3,7 @@ import { AiFillFacebook, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 const Contact = () => {
   return (
-    <section className="my-12 bg-gradient-to-r from-purple-200 to-purple-600 dark:bg-gray-900">
+    <section className="mt-12 pb-12 bg-gradient-to-r from-purple-200 to-purple-600 dark:bg-gray-900">
       <div className="container px-6 py-12 mx-auto">
         <div className="lg:flex lg:items-center lg:-mx-6">
           <div className="lg:w-1/2 lg:mx-6">
