@@ -146,7 +146,7 @@ const Navbar = () => {
                           to="/home"
                           aria-label="home"
                           title="home"
-                          className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-teal-accent-400"
+                          className="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
                         >
                           <i>Home</i>
                         </NavLink>
