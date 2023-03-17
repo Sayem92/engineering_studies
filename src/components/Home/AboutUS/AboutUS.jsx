@@ -15,7 +15,7 @@ const AboutUS = () => {
         </p>
 
         <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-2">
-          <div className="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl  group bg-purple-200 ">
+          <div className="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl  group bg-gradient-to-r from-purple-200 to-purple-400">
             <div className=" sm:-mx-4 sm:flex-row">
               <div className="flex justify-center mb-5">
                 <img
@@ -30,17 +30,18 @@ const AboutUS = () => {
                   Mazharul Alam
                 </h1>
 
-                <p className="mt-2 text-blue-600 capitalize">Founder, Designer</p>
+                <p className="mt-2 text-pink-200 capitalize">
+                  Founder, Designer
+                </p>
               </div>
             </div>
 
             <p className="mt-4 text-gray-700 ">
-              My name is Md. Sayem Miah. I am a MERN Stack Developer. I have a
-              professional experience with HTML, CSS, Bootstrap, React-
-              Bootstrap, Tailwind, React, Javascript, Node, Express, MongoDB,
-              Firebase, Vercel, GitHub, Git, Netlify, Figma, Redux, Material UI,
-              etc. I completed 40+ Projects. My hobby is programming. I want to
-              be a good eb Developer.
+              I am a MERN Stack Developer. I have a professional experience with
+              HTML, CSS, Bootstrap, React- Bootstrap, Tailwind, React,
+              Javascript, Node, Express, MongoDB, Firebase, Vercel, GitHub, Git,
+              Netlify, Figma, Redux, Material UI, etc. I completed 40+ Projects.
+              My hobby is programming. I want to be a good eb Developer.
             </p>
 
             <div className="flex mt-4 -mx-2">
@@ -78,7 +79,7 @@ const AboutUS = () => {
                 href="https://web.facebook.com/sayemahmed.sum/"
                 target="_blank"
                 rel="noreferrer"
-                className="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
+                className="mx-2 text-gray-600"
                 aria-label="Facebook"
               >
                 <svg
@@ -95,7 +96,7 @@ const AboutUS = () => {
                 href="https://github.com/MazharEC"
                 target="_blank"
                 rel="noreferrer"
-                className="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
+                className="mx-2 text-gray-600 "
                 aria-label="Github"
               >
                 <svg
@@ -110,7 +111,7 @@ const AboutUS = () => {
             </div>
           </div>
 
-          <div className="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl  group bg-purple-200 ">
+          <div className="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl  group bg-gradient-to-r from-purple-400 to-purple-600">
             <div className=" sm:-mx-4 sm:flex-row">
               <div className="flex justify-center mb-5">
                 <img
@@ -125,19 +126,18 @@ const AboutUS = () => {
                   Md. Sayem Miah
                 </h1>
 
-                <p className="mt-2 text-blue-600 capitalize">
+                <p className="mt-2 text-pink-300 capitalize">
                   MERN Stack Developer
                 </p>
               </div>
             </div>
 
             <p className="mt-4 text-gray-700 ">
-              My name is Md. Sayem Miah. I am a MERN Stack Developer. I have a
-              professional experience with HTML, CSS, Bootstrap, React-
-              Bootstrap, Tailwind, React, Javascript, Node, Express, MongoDB,
-              Firebase, Vercel, GitHub, Git, Netlify, Figma, Redux, Material UI,
-              etc. I completed 40+ Projects. My hobby is programming. I want to
-              be a good eb Developer.
+              I am a MERN Stack Developer. I have a professional experience with
+              HTML, CSS, Bootstrap, React- Bootstrap, Tailwind, React,
+              Javascript, Node, Express, MongoDB, Firebase, Vercel, GitHub, Git,
+              Netlify, Figma, Redux, Material UI, etc. I completed 40+ Projects.
+              My hobby is programming. I want to be a good eb Developer.
             </p>
 
             <div className="flex mt-4 -mx-2">
@@ -145,7 +145,7 @@ const AboutUS = () => {
                 href="https://www.linkedin.com/in/sayem-miha/"
                 target="_blank"
                 rel="noreferrer"
-                className="x-2 mt-1 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
+                className="x-2 mt-1 text-gray-600"
                 aria-label="LinkedIn"
               >
                 <svg
@@ -175,7 +175,7 @@ const AboutUS = () => {
                 href="https://web.facebook.com/sayemahmed.sum/"
                 target="_blank"
                 rel="noreferrer"
-                className="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
+                className="mx-2 text-gray-600"
                 aria-label="Facebook"
               >
                 <svg
@@ -192,7 +192,7 @@ const AboutUS = () => {
                 href="https://github.com/Sayem92"
                 target="_blank"
                 rel="noreferrer"
-                className="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
+                className="mx-2 text-gray-600 "
                 aria-label="Github"
               >
                 <svg

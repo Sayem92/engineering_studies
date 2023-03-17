@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import logo from '../../../src/assets/logo.jpeg'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,8 +20,9 @@ const Navbar = () => {
             title="home"
             className="inline-flex items-center"
           >
+            <img className="w-16 h-12" src={logo} alt="" />
             <span className="ml-2 text-xl md:text-2xl font-bold tracking-wide  uppercase text-green-500">
-              MD. Sayem miah
+              <i>Engineering Studies</i>
             </span>
           </NavLink>
           <ul className="flex items-center hidden space-x-8 lg:flex">
@@ -105,7 +107,7 @@ const Navbar = () => {
               </svg>
             </button>
             {isMenuOpen && (
-              <div className="absolute top-0 left-0 w-full">
+              <div className="absolute z-50 top-0 left-0 w-full">
                 <div className="p-5 bg-white border rounded shadow-sm">
                   <div className="flex items-center justify-between mb-4">
                     <div>
@@ -115,8 +117,9 @@ const Navbar = () => {
                         title="home"
                         className="inline-flex items-center"
                       >
-                        <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                          Md. Sayem miah
+                        <img className="w-16 h-12" src={logo} alt="" />
+                        <span className="ml-2 text-xl font-bold tracking-wide text-green-500 uppercase">
+                         <i>Engineering Studies</i>
                         </span>
                       </NavLink>
                     </div>
