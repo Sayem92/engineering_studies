@@ -23,21 +23,21 @@ const Footer = () => {
         <div className="flex flex-col space-y-4">
           <h2 className="font-bold text-xl text-[#f9dcc4]">QUICK LINKS</h2>
           <div className="flex flex-col space-y-2 text-base text-[#fdc364]">
-            <a rel="noopener noreferrer" href="#">
+            <p>
               Home
-            </a>
-            <a rel="noopener noreferrer" href="#">
+            </p>
+            <p>
               Studies
-            </a>
-            <a rel="noopener noreferrer" href="#">
+            </p>
+            <p>
               Blog
-            </a>
-            <a rel="noopener noreferrer" href="#">
+            </p>
+            <p>
               About Us
-            </a>
-            <a rel="noopener noreferrer" href="#">
+            </p>
+            <p>
               Contact
-            </a>
+            </p>
           </div>
         </div>
         <div className="flex flex-col space-y-4">
