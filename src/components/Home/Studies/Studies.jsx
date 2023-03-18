@@ -9,27 +9,30 @@ const Studies = () => {
     {
       name: "Computer Science and Engineering",
       image: cse,
+      title: "CSE"
     },
     {
       name: "Electrical and Electronics Engineering",
       image: eee,
+      title: "EEE"
     },
     {
       name: "Civil Engineering",
       image: civil,
+      title: "CE"
     },
   ];
   return (
-    <div className="py-16 px-10 bg-gradient-to-r from-slate-300 to-slate-100">
+    <div className="py-24 px-10 bg-gradient-to-r from-slate-300 to-slate-100">
       <div className="text-center">
         <h1 className="font-bold text-3xl">AVAILABLE <span className="text-purple-600">COURSES</span></h1>
-        <p className="py-3">
+        <p className="py-5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia placeat
           soluta obcaecati recusandae a odio provident perspiciatis magnam
           distinctio voluptatem.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
         {studies?.map((data, i) => (
           <StudiesCard key={i} data={data}></StudiesCard>
         ))}

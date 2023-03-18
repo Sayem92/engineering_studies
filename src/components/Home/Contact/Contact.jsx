@@ -3,7 +3,7 @@ import { AiFillFacebook, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 const Contact = () => {
   return (
-    <section className="mt-12 pb-12 bg-gradient-to-r from-purple-200 to-purple-600 dark:bg-gray-900">
+    <section className="mt-16 pb-12 bg-gradient-to-r from-purple-200 to-purple-600 dark:bg-gray-900">
       <div className="container px-6 py-12 mx-auto">
         <div className="lg:flex lg:items-center lg:-mx-6">
           <div className="lg:w-1/2 lg:mx-6">
@@ -138,7 +138,7 @@ const Contact = () => {
                     Message
                   </label>
                   <textarea
-                    className="block w-full h-12 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                    className="block w-full h-10 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-20 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                     placeholder="Message"
                   ></textarea>
                 </div>

@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="p-6 bg-gray-800 text-orange-500">
+    <footer className="p-6 pt-14 bg-gray-800 text-orange-500">
       <div className="container grid grid-cols-1 mx-auto gap-x-3 gap-y-8 sm:grid-cols-3 md:grid-cols-3">
         <div className="flex flex-col space-y-4">
           <h2 className="font-bold text-xl text-[#f9dcc4]">ABOUT THE SITE</h2>
@@ -23,21 +24,21 @@ const Footer = () => {
         <div className="flex flex-col space-y-4">
           <h2 className="font-bold text-xl text-[#f9dcc4]">QUICK LINKS</h2>
           <div className="flex flex-col space-y-2 text-base text-[#fdc364]">
-            <a rel="noopener noreferrer" href="#">
-              Home
-            </a>
-            <a rel="noopener noreferrer" href="#">
-              Studies
-            </a>
-            <a rel="noopener noreferrer" href="#">
-              Blog
-            </a>
-            <a rel="noopener noreferrer" href="#">
-              About Us
-            </a>
-            <a rel="noopener noreferrer" href="#">
-              Contact
-            </a>
+            <p>
+              <Link className="hover:underline hover:text-blue-600" to='/home'>Home</Link>
+            </p>
+            <p>
+              <Link className="hover:underline hover:text-blue-600" to='/studies'>Studies</Link>
+            </p>
+            <p>
+              <Link className="hover:underline hover:text-blue-600" to='/blog'>Blog</Link>
+            </p>
+            <p>
+              <Link className="hover:underline hover:text-blue-600" to='/aboutUs'>About Us</Link>
+            </p>
+            <p>
+              <Link className="hover:underline hover:text-blue-600" to='/contact'>Contact</Link>
+            </p>
           </div>
         </div>
         <div className="flex flex-col space-y-4">
@@ -55,6 +56,10 @@ const Footer = () => {
               <p>Monday</p>
               <p>5 pm to 7pm</p>
             </div>
+            <div className="flex items-center gap-[52px]">
+              <p>Tuesday</p>
+              <p>5 pm to 7pm</p>
+            </div>
             <div className="flex items-center gap-7">
               <p> Wednesday</p>
               <p>5 pm to 7pm</p>
@@ -67,12 +72,11 @@ const Footer = () => {
               <p>Friday</p>
               <p>3 pm to 6pm</p>
             </div>
-
           </div>
         </div>
       </div>
       <div className="flex items-center justify-center px-6 pt-12 text-sm">
-        <span className="text-gray-400">
+        <span className="text-gray-300">
           © Copyright 2022. All Rights Reserved.
         </span>
       </div>
