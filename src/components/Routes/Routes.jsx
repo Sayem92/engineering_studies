@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import AboutUS from "../Home/AboutUS/AboutUS";
 import Blog from "../Home/Blog/Blog";
+import BlogDetails from "../Home/Blog/BlogDetails";
 import Contact from "../Home/Contact/Contact";
 import Home from "../Home/Home";
 import Studies from "../Home/Studies/Studies";
@@ -39,7 +40,7 @@ export const router = createBrowserRouter([
         path: "/contact",
         element: <Contact></Contact>,
       },
-      // all studies route
+      // all studies route-----------------------
       {
         path: "/studies/cse",
         element: <CSE></CSE>,
@@ -52,7 +53,7 @@ export const router = createBrowserRouter([
         path: "/studies/ce",
         element: <CE></CE>,
       },
-      // course name
+      // course name------------------
       {
         path: "/studies/cse/1stSemester",
         element: <CourseName></CourseName>,
@@ -151,7 +152,19 @@ export const router = createBrowserRouter([
         path: "/studies/ce/8thSemester",
         element: <CourseName></CourseName>,
       },
-      
+      // all blog post --------
+      {
+        path: "/blog/1",
+        element: <BlogDetails></BlogDetails>
+      },
+      {
+        path: "/blog/2",
+        element: <BlogDetails></BlogDetails>
+      },
+      {
+        path: "/blog/3",
+        element: <BlogDetails></BlogDetails>
+      },
     ],
   },
 ]);
