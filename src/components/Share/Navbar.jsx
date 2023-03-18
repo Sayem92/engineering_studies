@@ -6,8 +6,8 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   let activeStyle = {
-    //   textDecoration: "underline",
-    //   color: 'blue'
+      textDecoration: "underline",
+      color: 'blue'
   };
 
   return (
@@ -41,7 +41,7 @@ const Navbar = () => {
             <li>
               <NavLink
                 style={({ isActive }) => (isActive ? activeStyle : undefined)}
-                to="/"
+                to="/studies"
                 aria-label="studies"
                 title="studies"
                 className="font-medium text-xl tracking-wide text-white transition-colors duration-200 hover:text-teal-accent-400"
@@ -52,7 +52,7 @@ const Navbar = () => {
             <li>
               <NavLink
                 style={({ isActive }) => (isActive ? activeStyle : undefined)}
-                to="/"
+                to="/blog"
                 aria-label="blog"
                 title="blog"
                 className="font-medium text-xl tracking-wide text-white transition-colors duration-200 hover:text-teal-accent-400"
@@ -63,7 +63,7 @@ const Navbar = () => {
             <li>
               <NavLink
                 style={({ isActive }) => (isActive ? activeStyle : undefined)}
-                to="/"
+                to="/aboutUs"
                 aria-label="About Us"
                 title="About Us"
                 className="font-medium text-xl tracking-wide text-white transition-colors duration-200 hover:text-teal-accent-400"
@@ -74,7 +74,7 @@ const Navbar = () => {
             <li>
               <NavLink
                 style={({ isActive }) => (isActive ? activeStyle : undefined)}
-                to="/"
+                to="/contact"
                 aria-label="contact"
                 title="contact"
                 className="font-medium text-xl tracking-wide text-white transition-colors duration-200 hover:text-teal-accent-400"
@@ -159,7 +159,7 @@ const Navbar = () => {
                           style={({ isActive }) =>
                             isActive ? activeStyle : undefined
                           }
-                          to="/"
+                          to="/studies"
                           aria-label="studies"
                           title="studies"
                           className="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
@@ -173,7 +173,7 @@ const Navbar = () => {
                           style={({ isActive }) =>
                             isActive ? activeStyle : undefined
                           }
-                          to="/"
+                          to="/blog"
                           aria-label="blog"
                           title="blog"
                           className="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
@@ -186,9 +186,9 @@ const Navbar = () => {
                           style={({ isActive }) =>
                             isActive ? activeStyle : undefined
                           }
-                          to="/"
-                          aria-label="About me"
-                          title="About me"
+                          to="/aboutUs"
+                          aria-label="About Us"
+                          title="About Us"
                           className="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
                         >
                           <i>About Us</i>
@@ -199,7 +199,7 @@ const Navbar = () => {
                           style={({ isActive }) =>
                             isActive ? activeStyle : undefined
                           }
-                          to="/"
+                          to="/contact"
                           aria-label="contact"
                           title="contact"
                           className="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
