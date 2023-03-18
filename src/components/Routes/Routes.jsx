@@ -5,6 +5,9 @@ import Contact from "../Home/Contact/Contact";
 import Home from "../Home/Home";
 import Studies from "../Home/Studies/Studies";
 import Main from "../Layout/Main";
+import CE from "../Pages/CE/CE";
+import CSE from "../Pages/CSE/CSE";
+import EEE from "../Pages/EEE/EEE";
 
 export const router = createBrowserRouter([
   {
@@ -34,6 +37,19 @@ export const router = createBrowserRouter([
         {
             path: "/contact",
             element: <Contact></Contact>
+        },
+        // all studies route
+        {
+            path: "/studies/cse",
+            element: <CSE></CSE>
+        },
+        {
+            path: "/studies/eee",
+            element: <EEE></EEE>
+        },
+        {
+            path: "/studies/ce",
+            element: <CE></CE>
         },
     ]
   },

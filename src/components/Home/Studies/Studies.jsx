@@ -9,14 +9,17 @@ const Studies = () => {
     {
       name: "Computer Science and Engineering",
       image: cse,
+      title: "CSE"
     },
     {
       name: "Electrical and Electronics Engineering",
       image: eee,
+      title: "EEE"
     },
     {
       name: "Civil Engineering",
       image: civil,
+      title: "CE"
     },
   ];
   return (
