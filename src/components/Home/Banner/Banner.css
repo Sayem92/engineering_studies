@@ -9,26 +9,26 @@
     0%,
     100% {
         background-image: url(../../../assets/pic1.jpeg);
-        opacity: 0.8;
+        opacity: 0.9;
     }
 
     20% {
         background-image: url(../../../assets/pic2.jpg);
-        opacity: 0.8;
+        opacity: 0.9;
     }
 
     40% {
         background-image: url(../../../assets/pic3.jpeg);
-        opacity: 0.8;
+        opacity: 0.9;
     }
 
     60% {
         background-image: url(../../../assets/pic4.jpeg);
-        opacity: 0.8;
+        opacity: 0.9;
     }
     80% {
         background-image: url(../../../assets/pic5.jpeg);
-        opacity: 0.8;
+        opacity: 0.9;
     }
     
   
