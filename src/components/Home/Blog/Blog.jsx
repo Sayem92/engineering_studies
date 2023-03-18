@@ -3,7 +3,7 @@ import React from "react";
 const Blog = () => {
   return (
     <section className="bg-white dark:bg-gray-900">
-      <div className="container px-6 py-10 mx-auto">
+      <div className="container px-6 py-20 mx-auto">
         <div className="text-center">
           <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">
             From <span className="text-purple-600">the blog</span>

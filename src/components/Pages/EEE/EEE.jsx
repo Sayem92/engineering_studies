@@ -1,42 +1,51 @@
 import React from "react";
-import SemesterCard from "../SemesterCard/SemesterCard";
+import SemesterButton from "../SemesterButton/SemesterButton";
 
 const EEE = () => {
   const moduleSemester = [
     {
-      id: 1,
+      title: "eee",
+      route: "module",
       name: "Module",
     },
     {
-      id: 2,
+      title: "eee",
+      route: "1stSemester",
       name: "1st Semester",
     },
     {
-      id: 3,
+      title: "eee",
+      route: "2ndSemester",
       name: "2nd Semester",
     },
     {
-      id: 4,
+      title: "eee",
+      route: "3rdSemester",
       name: "3rd Semester",
     },
     {
-      id: 5,
+      title: "eee",
+      route: "4thSemester",
       name: "4th Semester",
     },
     {
-      id: 6,
+      title: "eee",
+      route: "5thSemester",
       name: "5th Semester",
     },
     {
-      id: 7,
+      title: "eee",
+      route: "6thSemester",
       name: "6th Semester",
     },
     {
-      id: 8,
+      title: "eee",
+      route: "7thSemester",
       name: "7th Semester",
     },
     {
-      id: 9,
+      title: "eee",
+      route: "8thSemester",
       name: "8th Semester",
     },
   ];
@@ -44,7 +53,7 @@ const EEE = () => {
     <div className=" my-40 mx-10 md:mr-20 lg:mr-72">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {moduleSemester?.map((data, i) => (
-          <SemesterCard key={i} data={data}></SemesterCard>
+          <SemesterButton key={i} data={data}></SemesterButton>
         ))}
       </div>
     </div>
