@@ -8,27 +8,27 @@
 
     0%,
     100% {
-        background-image: url(../../../assets/pic1.jpeg);
-        opacity: 0.9;
+        background-image: url(../../../assets/cse1.jpeg);
+        opacity: 0.8;
     }
 
     20% {
-        background-image: url(../../../assets/pic2.jpg);
-        opacity: 0.9;
+        background-image: url(../../../assets/civil1.jpg);
+        opacity: 0.8;
     }
 
     40% {
-        background-image: url(../../../assets/pic3.jpeg);
-        opacity: 0.9;
+        background-image: url(../../../assets/civil2.jpg);
+        opacity: 0.8;
     }
 
     60% {
-        background-image: url(../../../assets/pic4.jpeg);
-        opacity: 0.9;
+        background-image: url(../../../assets/eee1.jpg);
+        opacity: 0.8;
     }
     80% {
-        background-image: url(../../../assets/pic5.jpeg);
-        opacity: 0.9;
+        background-image: url(../../../assets/eee2.jpeg);
+        opacity: 0.8;
     }
     
   
