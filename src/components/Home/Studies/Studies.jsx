@@ -7,6 +7,11 @@ import civil from "../../../assets/CIVIL.jpeg";
 const Studies = () => {
   const studies = [
     {
+      name: "Programming Language",
+      image: cse,
+      title: "PL",
+    },
+    {
       name: "Computer Science and Engineering",
       image: cse,
       title: "CSE",
