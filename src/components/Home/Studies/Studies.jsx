@@ -1,14 +1,15 @@
 import React from "react";
 import StudiesCard from "./StudiesCard";
+import pl from "../../../assets/pl.webp";
 import cse from "../../../assets/CSE.jpeg";
-import eee from "../../../assets/EEE.jpeg";
+import eee from "../../../assets/EEE.jpg";
 import civil from "../../../assets/CIVIL.jpeg";
 
 const Studies = () => {
   const studies = [
     {
-      name: "Programming Language",
-      image: cse,
+      name: "Programming",
+      image: pl,
       title: "PL",
     },
     {

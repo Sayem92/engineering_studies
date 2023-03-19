@@ -11,6 +11,7 @@ import CE from "../Pages/CE/CE";
 import CourseName from "../Pages/CourseName/CourseName";
 import CSE from "../Pages/CSE/CSE";
 import EEE from "../Pages/EEE/EEE";
+import PL from "../Pages/PL/PL";
 
 export const router = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ export const router = createBrowserRouter([
         element: <Contact></Contact>,
       },
       // all studies route-----------------------
+      {
+        path: "/studies/pl",
+        element: <PL></PL>,
+      },
       {
         path: "/studies/cse",
         element: <CSE></CSE>,
