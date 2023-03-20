@@ -10,6 +10,7 @@ import Main from "../Layout/Main";
 import CE from "../Pages/CE/CE";
 import CourseName from "../Pages/CourseName/CourseName";
 import CSE from "../Pages/CSE/CSE";
+import DetailsPage from "../Pages/DetailsPage/DetailsPage";
 import EEE from "../Pages/EEE/EEE";
 import PL from "../Pages/PL/PL";
 
@@ -76,6 +77,15 @@ export const router = createBrowserRouter([
         path: "/studies/eee/:semesterName",
         loader: ({params})=> fetch(`http://localhost:5000/eee/${params.semesterName}`),
         element: <CourseName></CourseName>,
+      },
+
+
+      
+      // details file pdf---------
+      {
+        path: "/studies/:categoryName",
+        loader: ({params})=> fetch(`http://localhost:5000/studies/${params.categoryName}`),
+        element: <DetailsPage></DetailsPage>,
       },
 
 

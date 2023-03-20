@@ -9,31 +9,31 @@ const ErrorPage = () => {
   return (
     <div>
       <div
-        class="flex items-center justify-center min-h-screen bg-indigo-500  bg-fixed bg-cover bg-bottom error-bg"
+        className="flex items-center justify-center min-h-screen bg-indigo-500  bg-fixed bg-cover bg-bottom error-bg"
         style={styles}
       >
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-8 offset-sm-2 text-purple-500 text-center -mt-52">
-              <div class="relative ">
-                <h1 class="relative text-9xl tracking-tighter-less text-shadow font-sans font-bold">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-8 offset-sm-2 text-purple-500 text-center -mt-52">
+              <div className="relative ">
+                <h1 className="relative text-9xl tracking-tighter-less text-shadow font-sans font-bold">
                   <span>4</span>
                   <span>0</span>
                   <span>4</span>
                 </h1>
-                <span class="absolute  top-0   -ml-12  text-gray-700 font-semibold">
+                <span className="absolute  top-0   -ml-12  text-gray-700 font-semibold">
                   Oops!
                 </span>
               </div>
-              <h5 class="text-gray-700 font-semibold -mr-10 -mt-3">
+              <h5 className="text-gray-700 font-semibold -mr-10 -mt-3">
                 Page not found
               </h5>
-              <p class="text-gray-700 mt-2 mb-6">
+              <p className="text-gray-700 mt-2 mb-6">
                 we are sorry, but the page you requested was not found
               </p>
               <Link
                 to="/"
-                class="bg-green-400  px-5 py-3 text-sm shadow-sm font-medium tracking-wider text-gray-50 rounded-full hover:shadow-lg"
+                className="bg-green-400  px-5 py-3 text-sm shadow-sm font-medium tracking-wider text-gray-50 rounded-full hover:shadow-lg"
               >
                 Got to Home
               </Link>
