@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const SemesterButton = ({ data }) => {
+
   return (
     <Link
       to={`/studies/${data?.title}/${data?.route}`}

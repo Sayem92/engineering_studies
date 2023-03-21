@@ -2,7 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const BlogPost = ({ data }) => {
-  const shortBody = data.body.slice(0, 150);
+
+  const shortBody = data.blog[0].p.slice(0,150);
+  // console.log(shortBody);
+
+
   return (
     <div>
       <div className="relative">
@@ -28,6 +32,11 @@ const BlogPost = ({ data }) => {
         </div>
       </div>
 
+      
+      <h1 className=" text-sm text-right mt-2 text-gray-800 dark:text-white">
+        {data?.date}
+      </h1>
+    
       <h1 className="mt-6 text-xl font-semibold text-gray-800 dark:text-white">
         {data?.title}
       </h1>
@@ -38,7 +47,7 @@ const BlogPost = ({ data }) => {
         {shortBody} ...
       </p>
       <p className="inline-block mt-4 text-blue-500 underline hover:text-blue-400">
-        <Link to={`/blog/${data?.id}`}>Read more</Link>
+        <Link to={`/blog/${data?._id}`}>Read more</Link>
       </p>
     </div>
   );

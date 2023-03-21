@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="p-1 bg-gradient-to-r from-purple-200 to-purple-600 ">
+    <div className="p-1 bg-gradient-to-t from-white to-purple-600 ">
       <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative flex items-center justify-between">
           <NavLink
