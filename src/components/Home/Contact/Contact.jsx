@@ -3,7 +3,7 @@ import { AiFillFacebook, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 const Contact = () => {
   return (
-    <section className="mt-16 pb-12 bg-gradient-to-r from-purple-200 to-purple-600 dark:bg-gray-900">
+    <section className="mt-16 pb-12 bg-gradient-to-b from-white to-purple-600 dark:bg-gray-900">
       <div className="container px-6 py-12 mx-auto">
         <div className="lg:flex lg:items-center lg:-mx-6">
           <div className="lg:w-1/2 lg:mx-6">
@@ -144,7 +144,7 @@ const Contact = () => {
                 </div>
 
                 <button className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
-                  Submit
+                  Send Message
                 </button>
               </form>
             </div>

@@ -12,7 +12,7 @@ const Pdf = ({ pdf }) => {
         href={pdf?.pdf1}
       >
          <img className="w-20 h-20" src={pdflogo} alt="" />
-        Open Pdf Name 
+        {pdf?.pdfName}
       </a>
     </div>
   );
