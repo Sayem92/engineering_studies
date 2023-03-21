@@ -5,7 +5,7 @@ const Blog = () => {
   const [post, setPost] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/blog")
+    fetch("https://engineering-studies-sever.vercel.app/blog")
       .then((res) => res.json())
       .then((data) => setPost(data));
   }, []);

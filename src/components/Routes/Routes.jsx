@@ -66,26 +66,26 @@ export const router = createBrowserRouter([
       // course name ➡️➡️➡️➡️➡️➡️➡️
       {
         path: "/studies/cse/:semesterName",
-        loader: ({params})=> fetch(`http://localhost:5000/cse/${params.semesterName}`),
+        loader: ({params})=> fetch(`https://engineering-studies-sever.vercel.app/cse/${params.semesterName}`),
         element: <CourseName></CourseName>,
       },
 
       // eee semester start ➡️➡️➡️➡️➡️➡️➡️
       {
         path: "/studies/eee/:semesterName",
-        loader: ({params})=> fetch(`http://localhost:5000/eee/${params.semesterName}`),
+        loader: ({params})=> fetch(`https://engineering-studies-sever.vercel.app/eee/${params.semesterName}`),
         element: <CourseName></CourseName>,
       },
       // ce semester start ➡️➡️➡️➡️➡️➡️➡️
       {
         path: "/studies/ce/:semesterName",
-        // loader: ({params})=> fetch(`http://localhost:5000/ce/${params.semesterName}`),
+        // loader: ({params})=> fetch(`http://https://engineering-studies-sever.vercel.app/ce/${params.semesterName}`),
         element: <CourseName></CourseName>,
       },
       // pl semester star➡️➡️➡️➡️➡️➡️➡️
       {
         path: "/studies/pl/:semesterName",
-        // loader: ({params})=> fetch(`http://localhost:5000/pl/${params.semesterName}`),
+        // loader: ({params})=> fetch(`http://https://engineering-studies-sever.vercel.app/pl/${params.semesterName}`),
         element: <CourseName></CourseName>,
       },
 
@@ -95,7 +95,7 @@ export const router = createBrowserRouter([
       // categoryName === eee1stSemester 
       {
         path: "/studies/:categoryName",
-        loader: ({params})=> fetch(`http://localhost:5000/studies/${params.categoryName}`),
+        loader: ({params})=> fetch(`https://engineering-studies-sever.vercel.app/studies/${params.categoryName}`),
         element: <DetailsPage></DetailsPage>,
       },
 
@@ -107,7 +107,7 @@ export const router = createBrowserRouter([
       // all blog post  ➡️➡️➡️➡️➡️➡️➡️
       {
         path: "/blog/:id",
-        loader: ({params})=> fetch(`http://localhost:5000/blog/${params.id}`),
+        loader: ({params})=> fetch(`https://engineering-studies-sever.vercel.app/blog/${params.id}`),
         element: <BlogDetails></BlogDetails>
       }
 
