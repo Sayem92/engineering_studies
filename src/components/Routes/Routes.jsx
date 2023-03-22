@@ -13,12 +13,13 @@ import CSE from "../Pages/CSE/CSE";
 import DetailsPage from "../Pages/DetailsPage/DetailsPage";
 import EEE from "../Pages/EEE/EEE";
 import PL from "../Pages/PL/PL";
+import PLDetailsPage from "../Pages/PL/PLDetailsPage";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
-    errorElement:<ErrorPage></ErrorPage>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -44,7 +45,7 @@ export const router = createBrowserRouter([
         path: "/contact",
         element: <Contact></Contact>,
       },
-      // all studies route   ➡️➡️➡️➡️➡️➡️➡️
+      //          👉👉all studies route👉👉   
       {
         path: "/studies/pl",
         element: <PL></PL>,
@@ -62,56 +63,52 @@ export const router = createBrowserRouter([
         element: <CE></CE>,
       },
 
-
-      // course name ➡️➡️➡️➡️➡️➡️➡️
+      //              👉👉  course name👉👉
+      //➡️ pl semester star
+      {
+        path: "/studies/pl/:languageName",
+        // loader: ({params})=> fetch(`http://localhost:5000/pl/${params.languageName}`),
+        element: <PLDetailsPage></PLDetailsPage>,
+      },
+      //➡️ cse semester start 
       {
         path: "/studies/cse/:semesterName",
-        loader: ({params})=> fetch(`http://localhost:5000/cse/${params.semesterName}`),
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/cse/${params.semesterName}`),
         element: <CourseName></CourseName>,
       },
 
-      // eee semester start ➡️➡️➡️➡️➡️➡️➡️
+      //➡️ eee semester start 
       {
         path: "/studies/eee/:semesterName",
-        loader: ({params})=> fetch(`http://localhost:5000/eee/${params.semesterName}`),
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/eee/${params.semesterName}`),
         element: <CourseName></CourseName>,
       },
-      // ce semester start ➡️➡️➡️➡️➡️➡️➡️
+      //➡️ ce semester start 
       {
         path: "/studies/ce/:semesterName",
         // loader: ({params})=> fetch(`http://localhost:5000/ce/${params.semesterName}`),
         element: <CourseName></CourseName>,
       },
-      // pl semester star➡️➡️➡️➡️➡️➡️➡️
-      {
-        path: "/studies/pl/:semesterName",
-        // loader: ({params})=> fetch(`http://localhost:5000/pl/${params.semesterName}`),
-        element: <CourseName></CourseName>,
-      },
+      
 
-
-
-      // details file pdf   ➡️➡️➡️➡️➡️➡️➡️
-      // categoryName === eee1stSemester 
+      // ➡️details file pdf
+      // categoryName === eee1stSemester
       {
         path: "/studies/:categoryName",
-        loader: ({params})=> fetch(`http://localhost:5000/studies/${params.categoryName}`),
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/studies/${params.categoryName}`),
         element: <DetailsPage></DetailsPage>,
       },
 
-
-
-     
-
-      
-      // all blog post  ➡️➡️➡️➡️➡️➡️➡️
+      //          👉👉all blog post 👉👉 
       {
         path: "/blog/:id",
-        loader: ({params})=> fetch(`http://localhost:5000/blog/${params.id}`),
-        element: <BlogDetails></BlogDetails>
-      }
-
-      
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/blog/${params.id}`),
+        element: <BlogDetails></BlogDetails>,
+      },
     ],
   },
 ]);
