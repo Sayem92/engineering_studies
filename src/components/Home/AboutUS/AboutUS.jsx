@@ -41,7 +41,6 @@ const AboutUS = () => {
               HTML, CSS, Bootstrap, React- Bootstrap, Tailwind, React,
               Javascript, Node, Express, MongoDB, Firebase, Vercel, GitHub, Git,
               Netlify, Figma, Redux, Material UI, etc. I completed 40+ Projects.
-              My hobby is programming. I want to be a good web Developer.
             </p>
 
             <div className="flex mt-4 -mx-2">
