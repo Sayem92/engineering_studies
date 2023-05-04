@@ -7,12 +7,7 @@ const Blog = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-<<<<<<< HEAD
-    setLoading(true);
-    fetch("http://localhost:5000/blog")
-=======
     fetch("https://engineering-studies-sever.vercel.app/blog")
->>>>>>> 36e81dba4ffef4bd2118dcf1ba9a9316618fc341
       .then((res) => res.json())
       .then((data) => {
         setPost(data);
