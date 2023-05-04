@@ -1,15 +1,26 @@
 import React, { useEffect, useState } from "react";
+import Skeleton3Col from "../../Loader/Skeleton/Skeleton3Col";
 import BlogPost from "./BlogPost";
 
 const Blog = () => {
   const [post, setPost] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    setLoading(true);
     fetch("http://localhost:5000/blog")
       .then((res) => res.json())
-      .then((data) => setPost(data));
+      .then((data) => {
+        setPost(data);
+        setLoading(false);
+      });
   }, []);
   // console.log(post);
+
+  if(loading){
+    return <Skeleton3Col></Skeleton3Col>
+  }
+  
 
   return (
     <section className="bg-white dark:bg-gray-900">

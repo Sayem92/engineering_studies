@@ -1,11 +1,12 @@
 import React, { useContext, useEffect } from "react";
 import { useLoaderData, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
+// import SkeletonSemester from "../../Loader/Skeleton/SkeletonSemester";
 import Pdf from "./Pdf";
 
 const DetailsPage = () => {
   const allSemesterDetails = useLoaderData();
-  const { detailsId} = useContext(AuthContext);
+  const { detailsId } = useContext(AuthContext);
   // console.log(detailsId);
   const navigate = useNavigate();
 
@@ -13,14 +14,16 @@ const DetailsPage = () => {
     (semester) => semester?._id === detailsId
   );
 
-useEffect(()=>{
-  if(!detailsId){
-    return navigate('/studies')
-  }
-},[detailsId, navigate])
+  useEffect(() => {
+    if (!detailsId) {
+      return navigate("/studies");
+    }
+  }, [detailsId, navigate]);
 
 
-
+  // if (filterDetails) {
+  //   return <SkeletonSemester></SkeletonSemester>;
+  // }
 
   // console.log(filterDetails[0]?.file);
 

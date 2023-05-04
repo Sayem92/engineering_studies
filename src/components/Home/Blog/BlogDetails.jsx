@@ -1,9 +1,14 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
+import Skeleton1Col from "../../Loader/Skeleton/Skeleton1Col";
 
 const BlogDetails = () => {
-  const  details  = useLoaderData();
+  const details = useLoaderData();
   // console.log(details);
+
+  if (!details?._id) {
+    return <Skeleton1Col></Skeleton1Col>;
+  }
 
   return (
     <div className="my-10">
@@ -25,7 +30,7 @@ const BlogDetails = () => {
         />
         <div className="p-4 absolute bottom-0 left-0 z-20">
           <h2 className="text-4xl font-semibold text-gray-100 leading-tight">
-          {details?.title}
+            {details?.title}
           </h2>
           <div className="flex mt-3">
             <img
@@ -48,10 +53,11 @@ const BlogDetails = () => {
       </div>
 
       <div className="px-4 lg:px-0 mt-12 text-gray-700 max-w-screen-md mx-auto text-lg leading-relaxed">
-        {
-          details?.blog?.map((para, i)=><p className="pb-6">{para.p}</p>)
-        }
-       
+        {details?.blog?.map((para, i) => (
+          <p key={i} className="pb-6">
+            {para.p}
+          </p>
+        ))}
       </div>
     </div>
   );
